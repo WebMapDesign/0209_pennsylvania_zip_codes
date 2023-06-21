@@ -12,7 +12,7 @@ const styleByIndex1 = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByIndex1(feature.properties["index1"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -35,7 +35,7 @@ const styleByIndex1Scaled = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByIndex1Scaled(feature.properties["index1 scaled"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -58,7 +58,7 @@ const styleByPopulation = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByPopulation(feature.properties["population"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -81,7 +81,7 @@ const styleByBusinesses = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByBusinesses(feature.properties["businesses"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -104,7 +104,7 @@ const styleByManufacturing = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByManufacturing(feature.properties["manufacturing"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -127,7 +127,7 @@ const styleByConstruction = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByConstruction(feature.properties["construction"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -150,7 +150,7 @@ const styleByService = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByService(feature.properties["service"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -175,7 +175,7 @@ const styleByTransportation = (feature) => {
     fillColor: chooseColorByTransportation(
       feature.properties["transportation"]
     ),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -198,7 +198,7 @@ const styleByRetail = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByRetail(feature.properties["retail"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };
@@ -221,7 +221,7 @@ const styleByWholesale = (feature) => {
     color: "#000000",
     fillColor: "#ff0000",
     fillColor: chooseColorByWholesale(feature.properties["wholesale"]),
-    fillOpacity: 0.8,
+    fillOpacity: 0.4,
     opacity: 1,
     weight: 1,
   };

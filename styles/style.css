@@ -157,3 +157,17 @@ td {
   font-size: 15px;
   font-weight: 800;
 }
+
+.tooltip-style,
+.leaflet-tooltip,
+.tooltip-text {
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  padding: 1px !important;
+  margin: 1px !important;
+  line-height: 12px;
+  border-width: 0px;
+  /* background-color: rgba(0, 0, 0, 0); */
+  /* box-shadow: 0 0px 0px rgba(0, 0, 0, 0); */
+}

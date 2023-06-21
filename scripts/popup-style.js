@@ -41,4 +41,18 @@ function onEachFeature(feature, layer) {
     "</p>";
 
   layer.bindPopup(popupContent, { closeButton: true });
+
+  // const layerName = layer
+  // const value = feature.properties["wholesale"]
+
+  const layerName = layer.options.name; // Assuming you have set a unique name for each layer
+  console.log("layerName: ", layerName);
+
+  const value = feature.properties[layerName];
+  const tooltipContent = '<p class="tooltip-text">' + value + "</p>";
+
+  layer.bindTooltip(tooltipContent, {
+    permanent: true,
+    direction: "center",
+  });
 }
