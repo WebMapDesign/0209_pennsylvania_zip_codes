@@ -42,13 +42,15 @@ function onEachFeature(feature, layer) {
 
   layer.bindPopup(popupContent, { closeButton: true });
 
-  // const layerName = layer
-  // const value = feature.properties["wholesale"]
+  const layerName = layer.options.name;
+  let value;
 
-  const layerName = layer.options.name; // Assuming you have set a unique name for each layer
-  console.log("layerName: ", layerName);
+  if (layerName === "index1 scaled") {
+    value = feature.properties[layerName].toFixed(1);
+  } else {
+    value = feature.properties[layerName];
+  }
 
-  const value = feature.properties[layerName];
   const tooltipContent = '<p class="tooltip-text">' + value + "</p>";
 
   layer.bindTooltip(tooltipContent, {

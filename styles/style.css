@@ -161,13 +161,32 @@ td {
 .tooltip-style,
 .leaflet-tooltip,
 .tooltip-text {
-  font-size: 1em;
+  font-size: 9px;
   font-weight: 400;
   text-align: center;
   padding: 1px !important;
   margin: 1px !important;
   line-height: 12px;
   border-width: 0px;
-  /* background-color: rgba(0, 0, 0, 0); */
-  /* box-shadow: 0 0px 0px rgba(0, 0, 0, 0); */
+}
+
+.tooltip-text-hidden {
+  font-size: 8px;
+  font-weight: 400;
+  text-align: center;
+  padding: 1px !important;
+  margin: 1px !important;
+  line-height: 12px;
+  border-width: 0px;
+  visibility: hidden;
+}
+
+#input-container {
+  position: absolute;
+  top: 22px;
+  left: 80px;
+  z-index: 9999;
+  background-color: #ffffff;
+  padding: 5px;
+  border: 1px solid black;
 }

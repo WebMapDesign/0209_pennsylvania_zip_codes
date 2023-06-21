@@ -180,3 +180,32 @@ const layerControl = L.control
 map.on("baselayerchange", function (eventLayer) {
   layerTerritories.bringToFront();
 });
+
+let tooltipVisible = true;
+
+function handleCheckboxChange() {
+  if (tooltipVisible === true) {
+    const elements = document.querySelectorAll(
+      ".tooltip-style, .leaflet-tooltip, .tooltip-text"
+    );
+
+    elements.forEach((element) => {
+      element.classList.remove("tooltip-text");
+      element.classList.add("tooltip-text-hidden");
+    });
+  } else {
+    const elements = document.querySelectorAll(
+      ".tooltip-style, .leaflet-tooltip, .tooltip-text-hidden"
+    );
+
+    elements.forEach((element) => {
+      element.classList.remove("tooltip-text-hidden");
+      element.classList.add("tooltip-text");
+    });
+  }
+
+  tooltipVisible = !tooltipVisible;
+}
+
+const tooltipCheckbox = document.getElementById("tooltipCheckbox");
+tooltipCheckbox.addEventListener("change", handleCheckboxChange);
